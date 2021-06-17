@@ -1,0 +1,34 @@
+
+        h1{
+            text-align: center;
+            color: rgb(60, 78, 32);
+        }
+
+        p{
+            font-weight: 600;
+            font-size: 3em;
+        }
+
+        body{
+            font-size: 16px;
+            background-color: rgb(235, 211, 170);
+        }
+
+        #amarelo{
+            text-align: center;
+            width: 200px; height: 100px;
+            background-color: yellow;
+        }
+
+        #vermelho{
+            text-align: center;
+            width: 200px; height: 100px;
+            background-color: red;
+        }
+
+        #marrom{
+            font-family: ;
+            text-align: center;
+            width: 200px; height: 100px;
+            background-color: sienna;
+        }
