@@ -1,0 +1,16 @@
+h1,p {
+    text-align: center;
+}
+
+li:hover{
+    background-color: black;
+    color: blanchedalmond;
+    
+}
+ol{
+    list-style: none;
+}
+li:active{
+    background-color: brown;
+    color: chocolate;
+}
