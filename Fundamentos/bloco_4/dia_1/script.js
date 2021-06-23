@@ -48,7 +48,7 @@ switch(valor > 0){
       console.log("positive");
       break;
     default:
-      console.log("erro");
+      console.log("zero");
 }
 // Exercício 5
 // 
