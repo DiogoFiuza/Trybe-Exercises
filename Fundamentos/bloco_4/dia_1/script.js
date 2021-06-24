@@ -52,3 +52,24 @@ switch(valor > 0){
 }
 // Exercício 5
 // 
+
+
+// Exercício 7
+// Converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F
+let porcentagem = 80;
+
+if(porcentagem >= 90 && porcentagem < 100){
+  console.log("A"); 
+}else if(Porcentagem >= 80 ){
+  console.log("B");
+}else if(Porcentagem >= 70){
+  console.log("C");
+}else if(Porcentagem >= 60){
+  console.log("D");
+}else if(Porcentagem >= 50){
+  console.log("E");
+}else if(Porcentagem < 50 && porcentagem > 0){
+  console.log("F");
+}else{
+  console.log("ERRO");
+}
