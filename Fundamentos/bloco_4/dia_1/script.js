@@ -68,6 +68,7 @@ if(angulo1 <= 0 || angulo2 <= 0 || angulo3 <= 0){
 }
 // Exercício 6
 // Mostrar o movimento da peça de xadres indicada
+// Fonte:
 let pecaDeXadrex = "peão";
 
 switch(pecaDeXadrex){
@@ -83,22 +84,21 @@ switch(pecaDeXadrex){
   case "cavalo":
     console.log("É a única peça que pode pular as outras. O movimento do cavalo é em forma de “L”, quer dizer, duas casas em sentido horizontal e mais uma na vertical ou vice-versa.");
     break;
-  case "torre";
+  case "torre":
     console.log("A torre movimenta-se pela vertical ou horizontal, mas não pode pular outras peças.");
     break;
-  case "peão"
+  case "peão":
     console.log("O peão movimenta-se apenas uma casa para frente e somente captura outras peças na diagonal. Opcionalmente, cada peão pode avançar duas casas no seu primeiro movimento do jogo.");
     break;
   default:
-    onsole.log("Peça inválida!");
+    console.log("Peça inválida!");
 }
-
 
 // Exercício 7
 // Converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F
 let porcentagem = 80;
 
-if(porcentagem >= 90 && porcentagem < 100){
+if(porcentagem >= 90 && porcentagem <100){
   console.log("A"); 
 }else if(Porcentagem >= 80 ){
   console.log("B");
@@ -113,3 +113,30 @@ if(porcentagem >= 90 && porcentagem < 100){
 }else{
   console.log("ERRO");
 }
+
+// Exercício 8
+/*Escreva um programa que defina três números em variáveis e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .*/
+
+let num1 = 1;
+let num2 = 2;
+let num3 = 4;
+
+if(num1 % 2 ==  0 || num2 % 2 == 0 || num3 % 3 == 0){
+  console.log(true);
+}else {
+  console.log(false);
+}
+// Exercício 9
+// Escreva um programa que defina três números em variáveis e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+
+let num1 = 1;
+let num2 = 2;
+let num3 = 4;
+
+if(num1 % 2 !=  0 || num2 % 2 != 0 || num3 % 3 != 0){
+  console.log(true);
+}else {
+  console.log(false);
+}
+
+// Exercício 10
