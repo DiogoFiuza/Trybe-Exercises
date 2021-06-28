@@ -139,4 +139,5 @@ if(n1 % 2 !=  0 || n2 % 2 != 0 || n3 % 3 != 0){
   console.log(false);
 }
 
-// Exercício 10
+// Exercício 10 
+
