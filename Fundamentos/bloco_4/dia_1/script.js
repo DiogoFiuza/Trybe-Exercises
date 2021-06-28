@@ -51,7 +51,6 @@ switch(valor > 0){
       console.log("zero");
 }
 // Exercício 5
-//  
 /*Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. */
 let angulo1 = 60;
 let angulo2 = 50;
@@ -141,3 +140,4 @@ if(n1 % 2 !=  0 || n2 % 2 != 0 || n3 % 3 != 0){
 }
 
 // Exercício 10 
+
