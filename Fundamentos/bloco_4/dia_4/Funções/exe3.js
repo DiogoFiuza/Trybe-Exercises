@@ -1,5 +1,5 @@
 // Exercício 3
-// ostra a posição do menor número
+// Mostra a posição do menor número
 
 let numbers = [2, 4, 6, 7, 10, 0, -3];;
 let menor = 0;
