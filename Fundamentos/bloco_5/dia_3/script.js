@@ -27,11 +27,13 @@ function createDays(){
     date.innerHTML = day
     dates.appendChild(date)
 
-    if(date.innerHTML == 24 || date.innerHTML  == 25 || date.innerHTML  == 31 ){
+    if(date.innerHTML == 24 || date.innerHTML  == 31 ){
       date.className = 'day holiday'
-    } else if(date.innerHTML == 4 || date.innerHTML == 11 || date.innerHTML == 18 || index == 25){
+    } else if(date.innerHTML == 4 || date.innerHTML == 11 || date.innerHTML == 18){
       date.className = 'day friday'
-    }else {
+    }else if(date.innerHTML == 25){
+      date.className = 'day friday holiday'
+    }else{
       date.className = 'day'
     }
   }
@@ -40,7 +42,7 @@ function createDays(){
 createDays()
 
 // Exercício 2
-function makeButton(name){
+function holidayButton(name){
   let button = document.createElement('button')
   let divButton = document.querySelector(".buttons-container")
   button.id = "btn-holiday"
@@ -48,21 +50,48 @@ function makeButton(name){
   divButton.appendChild(button)
   button.innerHTML = name
 }
-makeButton('Feriados')
+holidayButton('Feriados')
 
 // Exercício 3
-
   button = document.querySelector("#btn-holiday")
   button.addEventListener('click', function(){
-
     let getHoliday = document.querySelectorAll('.holiday')
-    for(let index = 0; index < getHoliday.length; index += 1) {
-      if(getHoliday[index].style.backgroundColor == "green") {
-        getHoliday[index].style.backgroundColor = "rgb(238,238,238)";
+    for(let index of getHoliday) {
+      if(index.style.backgroundColor == "green") {
+        index.style.backgroundColor = "rgb(238,238,238)";
       } else {
-        getHoliday[index].style.backgroundColor = "green";
+        index.style.backgroundColor = "green";
       }
     }
   })
+
+// Exercício 4
+function fridayButton(name){
+  let button = document.createElement('button')
+  let divButton = document.querySelector(".buttons-container")
+  button.id = "btn-friday"
+
+  divButton.appendChild(button)
+  button.innerHTML = name
+}
+fridayButton('Sexta-feiras')
+
+
+// Exercício 5
+function nameFriday(name){
+  document.querySelector("#btn-friday").addEventListener('click', function(){;
+    let getFriday = document.querySelectorAll('.friday')
+
+    for(let index of getFriday) {
+      if(index.innerText == name) {
+        index.innerText = parseInt(index.nextElementSibling.innerText - 1);
+      } else {
+        index.innerText = name;
+      }
+    }
+  })
+}
+nameFriday("Sextou!!")
+
 
 
