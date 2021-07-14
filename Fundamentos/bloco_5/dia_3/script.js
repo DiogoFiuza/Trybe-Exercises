@@ -93,5 +93,25 @@ function nameFriday(name){
 }
 nameFriday("Sextou!!")
 
+// Exercicio 6
+function dayZoom (){
+  const days = document.querySelector('#days');
+  days.addEventListener('mouseover', function(event){
+    
+    event.target.style.fontSize ='30px'
+  })
+}
+
+function dayZoomOut (){
+  const days = document.querySelector('#days');
+  days.addEventListener('mouseout', function(event){
+    
+    event.target.style.fontSize = '20px'
+  })
+}
+dayZoom()
+dayZoomOut()
+
+// Exercicio 7
 
 
