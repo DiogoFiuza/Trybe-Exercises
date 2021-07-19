@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<header>
+  <h1 class="">Formulário</h1>
+  <p><em>Formulário de currículo</em></p>
+</header>
+<body>
+  <form id="form1" class="js-form form" action="" method="GET">
+  <!-- Recebe um nome obrigatoriamente -->
+  <div class="box-content form-group">
+      <fieldset> 
+        <legend class="legend">Dados</legend> 
+        <!-- Nome -->
+        <div class="form-group">
+          <label class="name" for="name">Nome</label>
+          <input  type = "text" class = "form__input form-control" placeholder = "Digite seu nome "autocomplete = " off " data-validate-field = "name" name = "name" id = "name" placeholder="Ex: Fulano de Tal">
+        </div>
+          
+        <!-- E-mail -->
+        <div class="form-group">
+          <label class="form-label" for="email">E-mail</label>
+          <input class="form__input form-control" name="email" type="email" id="email" autocomplete="off" maxlength='50' data-validate-field="email" placeholder="Ex: fulano@gmail.com" >
+        </div>
+        
+        <!-- CPF -->
+        <div class="form-group">
+          <label class="form-label" for="cpf">CPF</label>
+          <input type="text" name="cpf" onblur="formataCPF(this)" data-validate-field="cpf" id="cpf" class="form__input form-control" placeholder="Ex.: 000.000.000-00"  min="11" autocomplete="off">
+        </div>
+        
+        <!-- Endereço -->
+        <div class="form-group">
+          <label class="form-label" for="endereco">Endereço</label>
+          <input class="form__input form-control" data-validate-field="endereco" type="text" name="endereco" id="endereço" maxlength="200">
+        </div>
+        
+        <!-- Estado -->
+        <div class="form-group">
+          <label class="form-label" for="estados">Estado</label>
+          <select  name="estados" class="form-select estados" data-validate-field="estados" id="estados">
+            <option value="disable" disabled selected> ---</option>
+          </select>
+        </div>
+       
+        <br><br>
+        <!-- Tipo de casa -->
+        <label for="type" class="form-label">Complemento:</label>
+        <div class="form-check-inline">
+          <!-- opção 1 -->
+          <input class="form-check-input" data-validate-field = "complemento" type="radio" name="tipo_ de_casa" id="casa" >
+          <label class="form-check-label" for="casa"> Casa</label>
+          <!-- opção 2 -->
+          <input class="form-check-input"  data-validate-field = "complemento" type="radio" name="tipo_ de_casa" id="apartamento">
+          <label class="form-check-label" for="apartamento"> Apartamento</label>
+          <!-- opção 3 -->
+          <input class="form-check-input" data-validate-field = "complemento" type="radio" name="tipo_ de_casa" id="fazenda">
+          <label class="form-check-label" for="fazenda">Fazenda</label>
+        </div>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Último Trabalho</legend>
+        <!-- Resumo Profissional -->
+        <div class="form-group">
+          <label class="form-label" for="resumo">Último Emprego</label>
+          <textarea class="form__input form-control" data-validate-field="resumo" name="resumo" id="resumo" maxlength="1000" ></textarea>
+        </div>
+        <!-- Cargo -->
+        <div class="form-group">
+          <label class="form-label" for="cargo">Cargo: </label>
+          <input class="form__input form-control" type="text" name="cargo" id="cargo" placeholder="Ex.: Programador" autocomplete="off" maxlength="40" data-validate-field="cargo">
+        </div>
+        
+        <!-- Descrição do Cargo -->
+        <div class="form-group">
+          <label class="form-label" for="descricao_do_cargo">Descrição do Cargo</label>
+          <textarea class="form__input form-control" name="descricao_do_cargo" id="descricao_do_cargo" data-validate-field="descricao_do_cargo" maxlength="500" cols="30" rows="10"></textarea>
+        </div>
+        
+        <!-- Data de início -->
+        <div>
+          <label class="form-label" for="data">Data</label>
+          <input class="form-control" type="text" name="data" data-validate-field="data" id="datepicker"   placeholder="Ex.: 00/00/0000" autocomplete="off" >
+        </div>
+      </fieldset>
+      <div >
+        <button id="button" class="btn btn-primary">Enviar</button>
+        <button class="btn btn-warning" type="reset" id=reset>Limpar Informacoes</button>
+      </div>
+    </form>
+  </div>
+  <div class="resposta">
+
+  </div>
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
