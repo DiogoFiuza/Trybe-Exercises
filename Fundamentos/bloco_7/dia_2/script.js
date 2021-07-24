@@ -59,3 +59,53 @@ const orderModifier = (order) => {
   return `Olá ${name}, o total do seu pedido de ${pizzas[0]}, ${pizzas[1]} e ${drink[0]} é ${price}`
 }
 console.log(orderModifier(order))
+
+
+// Parte II
+
+const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
+};
+
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
+
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
+
+// Exercício 1
+lesson2['turno'] = 'manhã';
+console.log(lesson2);
+
+// Exercício 2
+function keysList(key){
+  let keys = Object.keys(key)
+  return keys;
+}
+console.log(keysList(lesson1));
+
+// Exercício 3
+function sizeObject(object){
+  let size = Object.keys(object).length;
+  return size;
+}
+console.log(sizeObject(lesson1));
+
+// Exercício 4
+function objectValues(object){
+  let values = Object.values(object);
+  return values;
+}
+console.log(objectValues(lesson2));
+
+// Exercício 5
