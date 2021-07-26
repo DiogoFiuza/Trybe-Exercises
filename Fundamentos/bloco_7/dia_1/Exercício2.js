@@ -34,5 +34,4 @@ button.addEventListener('click', () => {
   clicks.innerText = numberOfClicks += 1;
 });
 
-// Exercício 4
-const phrase = 
+
