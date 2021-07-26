@@ -125,4 +125,3 @@ const totalStudents = (students) => {
 }
 
 console.log(totalStudents(allLessons));
-
