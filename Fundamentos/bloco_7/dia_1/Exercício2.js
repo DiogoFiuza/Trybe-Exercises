@@ -10,7 +10,7 @@ const fatorial = number => {
 console.log(fatorial(5));
 
 
-// Exxercício 2
+// Exercício 2
 const biggerWord = phrase => {
   let words = phrase.split(' ');
   let sizeWord = 0;
@@ -23,5 +23,13 @@ const biggerWord = phrase => {
     }
   }return result;
 }
+console.log(biggerWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
 
-console.log(biggerWord("Antônio foi no banheiro e não sabemos o que aconteceu"))
+// Exercício 3
+const button = document.querySelector('#button');
+const clicks = document.querySelector('#clicks');
+let numberOfClicks = 0;
+
+button.addEventListener('click', () => {
+  clicks.innerText = numberOfClicks += 1;
+});
