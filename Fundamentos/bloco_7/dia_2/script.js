@@ -109,3 +109,19 @@ function objectValues(object){
 console.log(objectValues(lesson2));
 
 // Exercício 5
+const allLessons = Object.assign({}, {lesson1,lesson2,lesson3});
+console.log(allLessons);
+
+// Exercício 6
+
+const totalStudents = (students) => {
+  let numberOfStudents = 0;
+  const lessons = Object.keys(students);
+
+  for(index in lessons){
+    numberOfStudents += students[lessons[index]].numeroEstudantes;
+  }
+  return numberOfStudents;
+}
+
+console.log(totalStudents(allLessons));
