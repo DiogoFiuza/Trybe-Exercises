@@ -20,11 +20,6 @@ oddsAndEvens.sort(function(a, b) {
   console.log(b);
   return a - b;
 })
-
-
 console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`); 
-
-// Parte 2
-// Exercício 1
 
 
