@@ -92,7 +92,6 @@ const expectedResult = [
 function oldBooksOrdered() {
   // escreva seu código aqui
   const moreOldBooks = books.filter((book) => (2021 - book.releaseYear) > 60)
-  
   return moreOldBooks.sort((a,b) => a.releaseYear - b.releaseYear)
 }
 
