@@ -63,12 +63,12 @@ const books = [
   },
 ];
 
-// Exercício 1
 // Adicione o código do exercício aqui:
-function authorBornIn1947() {
-  // escreva aqui o seu código
-  return books.find((value) => value.author.birthYear === 1947).author.name;
-}
-console.log(authorBornIn1947());
-assert.strictEqual(authorBornIn1947(), 'Stephen King');
+const expectedResult = false;
 
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  return books.every((book) => book.author.birthYear > 1900 && book.author.birthYear < 2001)
+}
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
