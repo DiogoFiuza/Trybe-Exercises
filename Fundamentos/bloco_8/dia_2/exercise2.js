@@ -63,15 +63,7 @@ const books = [
   },
 ];
 
-// Exercício 1
 // Adicione o código do exercício aqui:
-// function authorBornIn1947() {
-//   // escreva aqui o seu código
-//   return books.find((value) => value.author.birthYear === 1947).author.name;
-// }
-// console.log(authorBornIn1947());
-// assert.strictEqual(authorBornIn1947(), 'Stephen King');
-
 // Exercício 2
 function smallerName() {
   let nameBook = books[0].name;

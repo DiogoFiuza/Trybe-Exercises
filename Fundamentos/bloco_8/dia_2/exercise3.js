@@ -63,26 +63,22 @@ const books = [
   },
 ];
 
-// Exercício 1
 // Adicione o código do exercício aqui:
-// function authorBornIn1947() {
-//   // escreva aqui o seu código
-//   return books.find((value) => value.author.birthYear === 1947).author.name;
-// }
-// console.log(authorBornIn1947());
-// assert.strictEqual(authorBornIn1947(), 'Stephen King');
 
-// Exercício 2
-function smallerName() {
-  let nameBook = books[0].name;
-  // escreva aqui o seu código
-  books.forEach((element) => {
-    if(element.name.length < nameBook.length) {
-      nameBook = element.name;
-    }
-  });
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
+const expectedResult = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin',
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991,
+};
+
+function getNamedBook() {
+  // escreva seu código aqui
+  return books.find((book) => book.name.length === 26)
 }
-// console.log(smallerName(books))
-assert.strictEqual(smallerName(), 'Duna');
+console.log(getNamedBook())
+assert.deepStrictEqual(getNamedBook(), expectedResult);
