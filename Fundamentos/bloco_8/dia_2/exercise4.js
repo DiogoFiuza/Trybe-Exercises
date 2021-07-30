@@ -112,12 +112,12 @@ const expectedResult = [
 function booksOrderedByReleaseYearDesc() {
   const ordered = books.sort((a, b) => {
     if(a.releaseYear > b.releaseYear){
-      return -1
+      return -1;
     }
     if(a.releaseYear < b.releaseYear){
-      return 1
+      return 1;
     }
-    return 0
+    return 0;
   });
   return ordered
 }
