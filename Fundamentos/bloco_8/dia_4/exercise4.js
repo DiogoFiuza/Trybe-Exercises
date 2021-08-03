@@ -21,5 +21,4 @@ function longestNamedBook() {
   return acc;
   })
 }
-console.log(longestNamedBook())
 assert.deepStrictEqual(longestNamedBook(), expectedResult);
