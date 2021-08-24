@@ -1,0 +1,18 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercise1.js",
+  "dependencies": {
+    "jest": "^27.0.6",
+    "lint": "^0.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watchAll",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslint.json . --ext .js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
